@@ -1,10 +1,10 @@
 import React from 'react';
-import html from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/html.png';
-import css from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/css.png';
-import javascript from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/javascript.png';
-import react from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/react.png';
-import github from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/github.png';
-import tailwind from '../asset/portfolio/tailwind.png';
+import html from '../assets/portfolio/html.png';
+import css from '../assets/portfolio/css.png';
+import javascript from '../assets/portfolio/javascript.png';
+import react from '../assets/portfolio/react.png';
+import github from '../assets/portfolio/github.png';
+import tailwind from '../assets/portfolio/tailwind.png';
 
 const Skills = () => {
     const skills = [

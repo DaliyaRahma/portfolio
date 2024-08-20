@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import myImage from '../asset/portfolio/myImage.png';
+import myImage from '../assets/portfolio/myImage.png';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import MouseTrail from './MouseTrail';
 
