@@ -1,6 +1,6 @@
 
 import React from 'react';
-import pizza from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/pizza.png';
+import pizza from '../assets/portfolio/pizza.png';
 
 
 const DeveloperPortfolio = () => {

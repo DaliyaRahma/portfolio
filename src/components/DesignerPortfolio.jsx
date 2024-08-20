@@ -1,26 +1,26 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import pizza from '../asset/portfolio/pizza.png';
-import App from '../asset/portfolio/design temp.png';
-import furniture from '../asset/portfolio/furniture.jpg';
-import logogreen from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Pro 16_ - 2.jpg';
-import banner from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Pro Mockup on the Table.jpg';
-import banner1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/web banner.jpg';
-import logogreen1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/Frame 9.png';
-import Cake from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/CAKE WALK LOGO.png';
-import cake1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/cake walk.png';
-import App1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 1.jpg';
-import App2 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 2.jpg';
-import App3 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 3.jpg';
-import App4 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 4.jpg';
-import App5 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 5-1.jpg';
-import App6 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 6.jpg';
-import App7 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Air - 7.jpg';
-import blender from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/video0001-0330.mp4';
-import shoe from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/shoewebsite.png'
-import shoe1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/shoewebsite1.jpg'
-import denzo from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/denzo1.jpg'
-import denzo1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/denzo.png'
+import pizza from '../assets/portfolio/pizza.png';
+import App from '../assets/portfolio/design temp.png';
+import furniture from '../assets/portfolio/furniture.jpg';
+import logogreen from '../assets/portfolio/MacBook Pro 16_ - 2.jpg';
+import banner from '../assets/portfolio/MacBook Pro Mockup on the Table.jpg';
+import banner1 from '../assets/portfolio/web banner.jpg';
+import logogreen1 from '../assets/portfolio/Frame 9.png';
+import Cake from '../assets/portfolio/CAKE WALK LOGO.png';
+import cake1 from '../assets/portfolio/cake walk.png';
+import App1 from '../assets/portfolio/MacBook Air - 1.jpg';
+import App2 from '../assets/portfolio/MacBook Air - 2.jpg';
+import App3 from '../assets/portfolio/MacBook Air - 3.jpg';
+import App4 from '../assets/portfolio/MacBook Air - 4.jpg';
+import App5 from '../assets/portfolio/MacBook Air - 5-1.jpg';
+import App6 from '../assets/portfolio/MacBook Air - 6.jpg';
+import App7 from '../assets/portfolio/MacBook Air - 7.jpg';
+import blender from '../assets/portfolio/video0001-0330.mp4';
+import shoe from '../assets/portfolio/shoewebsite.png'
+import shoe1 from '../assets/portfolio/shoewebsite1.jpg'
+import denzo from '../assets/portfolio/denzo1.jpg'
+import denzo1 from '../assets/portfolio/denzo.png'
 const DesignerPortfolio = () => {
   const navigate = useNavigate();
 
