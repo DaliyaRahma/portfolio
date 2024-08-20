@@ -28,7 +28,7 @@ const NavBar = ({ nav, setNav }) => {
   return (
     <div className="fixed flex justify-between items-center w-full h-20 px-4 text-white bg-black z-30">
       <div>
-        <h1 className="text-5xl font- ml-2">Daliya</h1>
+        <h1 className="text-5xl font-signature font- ml-2">Daliya</h1>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
