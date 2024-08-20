@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import pizza from '../asset/portfolio/pizza.png';
 import App from '../asset/portfolio/design temp.png';
-import furniture from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/furniture.jpg';
+import furniture from '../asset/portfolio/furniture.jpg';
 import logogreen from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Pro 16_ - 2.jpg';
 import banner from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/MacBook Pro Mockup on the Table.jpg';
 import banner1 from '/Users/daliyarahma/Desktop/my-project/src/asset/portfolio/web banner.jpg';
