@@ -1,11 +1,11 @@
 
 import React from 'react';
-import pizza from '../assets/portfolio/pizza.png';
+import website from '../assets/portfolio/mywebsite.png';
 
 
 const DeveloperPortfolio = () => {
   const portfolios = [
-    { id: 1, src: pizza , demoLink:'https://dribbble.com/daliyarahma' , codeLink:'https://github.com/DaliyaRahma?tab=repositories' },
+    { id: 1, src: website , demoLink:'https://main--grand-longma-5f30e3.netlify.app' , codeLink:'https://github.com/DaliyaRahma?tab=repositories' },
 
   ];
 
