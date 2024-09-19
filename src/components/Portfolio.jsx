@@ -29,7 +29,7 @@ const Portfolio = () => {
             <li>HTML & CSS</li>
               <li>JavaScript</li>
               <li>React.js</li>
-              <li>Next.js</li>
+              <li>Node.js</li>
               <li>Version Control (Git)</li>
               <li>Tailwind CSS</li>
               <li>Responsive Design</li>
