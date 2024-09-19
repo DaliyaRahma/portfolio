@@ -5,6 +5,9 @@ import javascript from '../assets/portfolio/javascript.png';
 import react from '../assets/portfolio/react.png';
 import github from '../assets/portfolio/github.png';
 import tailwind from '../assets/portfolio/tailwind.png';
+import node from '../assets/portfolio/node.png'
+import Express from '../assets/portfolio/express-2.png'
+import Mongodb from '../assets/portfolio/mongodb-2.png'
 
 const Skills = () => {
     const skills = [
@@ -40,9 +43,30 @@ const Skills = () => {
         },
         {
             id: 6,
+            src: node,
+            title: 'Node.Js',
+            style: 'shadow-green-400',
+        },
+        {
+            id: 7,
+            src: Express,
+            title: 'Express',
+            style: 'shadow-gray-400',
+
+        },
+        {
+            id: 8,
+            src: Mongodb,
+            title: 'Mongodb',
+            style: 'shadow-green-400',
+
+        },
+        {
+            id: 9,
             src: github,
             title: 'GitHub',
             style: 'shadow-gray-400',
+
         },
     ];
 

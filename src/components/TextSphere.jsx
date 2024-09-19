@@ -7,11 +7,11 @@ const TextSphere = () => {
     useEffect(() => {
         if (initializedRef.current) return;
         const myTags = [
-            'JavaScript', 'CSS', 'HTML', 'Next.Js', 'React',
+            'JavaScript', 'CSS', 'HTML', 'React',
              'git', 'Node.js',
             'Wordpress', 'Netlify', 'JavaScript', 'CSS', 'HTML', 'Next.Js', 'React',
             'git', 'Node.js',
-           'Wordpress', 'Netlify',
+           'Express', 'MongoDB',
         ]
         const radius = window.innerWidth < 640 ? 150 : 240;
         const options = {

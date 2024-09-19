@@ -57,7 +57,7 @@ const Portfolio = () => {
               
             </ul>
             <div className="flex justify-center items-center mt-6">
-              <button onClick={directTo} className="text-white w-fit px-6 py-3 mt-3 mb-5 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-cyan-800 hover:border-solid hover:border-cyan-500 hover:bg-none border-2 cursor-pointer text-sm sm:text-lg">
+              <button onClick={directTo} className="text-white w-fit px-6 py-3 mt-3 mb-5 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-cyan-800 hover:border-cyan-500 hover:bg-none border-2 cursor-pointer text-sm sm:text-lg">
                 See My Work
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </button>
