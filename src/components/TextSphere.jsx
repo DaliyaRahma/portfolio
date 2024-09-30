@@ -9,7 +9,7 @@ const TextSphere = () => {
         const myTags = [
             'JavaScript', 'CSS', 'HTML', 'React',
              'git', 'Node.js',
-            'Wordpress', 'Netlify', 'JavaScript', 'CSS', 'HTML', 'Next.Js', 'React',
+            'Wordpress', 'Netlify', 'JavaScript', 'CSS', 'HTML', 'React',
             'git', 'Node.js',
            'Express', 'MongoDB',
         ]
