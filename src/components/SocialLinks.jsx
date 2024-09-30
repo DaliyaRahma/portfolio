@@ -59,7 +59,7 @@ const SocialLinks = () => {
                         className={`flex justify-between items-center h-14 w-40 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 ${style}`}>
                         <a href={href} 
                         className='flex justify-between items-center w-full text-white'
-                            download={download}
+                            
                             target="_blank"
                             rel="noreferrer" 
                         >
