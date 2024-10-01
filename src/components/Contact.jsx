@@ -1,6 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
+
 
 const Contact = () => {
+  const [name, setName]=useState();
+  const [email, setEmail]=useState();
+  const [message, setMessage]= useState();
+ 
+    const clickSubmit =()=>{
+    
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
+
   return (
     < div name='contact' className='bg-gradient-to-b from-black to-gray-800 w-full h-screen text-white justify-center items-center'>
       <div className='flex flex-col h-full justify-center max-w-screen-lg p-4 mx-auto'>
@@ -10,22 +23,32 @@ const Contact = () => {
           <p className='md:text-lg py-4 text-sm'>Submit the form below to get in touch with me</p>
         </div>
         <div className='flex justify-center items-center'>
+          
           <form action='https://getform.io/f/lakmomda' method='POST' className='flex flex-col w-full md:w-1/2'>
             <input type='text'
-              name='name'
+              name='Name'
+              value={name}
               placeholder='Enter your name' 
+              onChange={(e)=>setName(e.target.value)}
+              onSubmit={clickSubmit}
               className='p-2 border-2 bg-transparent rounded-md focus:outline-none '>
               </input>
             <input type='email'
               name='Email'
+              value={email}
               placeholder='Enter your email' 
+              onChange={(e)=> setEmail(e.target.value)}
+              onSubmit={clickSubmit}
               className='my-4 p-2 border-2 bg-transparent rounded-md focus:outline-none' required>
               </input>
            
             <textarea 
             name='Message' 
+            value={message}
             placeholder='Enter your message' 
             rows='10' 
+            onChange={(e)=> setMessage(e.target.value)}
+            onSubmit={clickSubmit}
             className='p-2 border-2 bg-transparent rounded-md focus:outline-none'>
             </textarea>
 
