@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import myImage from '../assets/portfolio/myImage.png';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import MouseTrail from './MouseTrail';
+
 
 import { Link } from 'react-scroll';
 
@@ -62,7 +62,7 @@ const Home = ({ nav }) => {
 
   return (
     <div name="home" className='relative h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
-      <MouseTrail />
+     
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6 md:flex-row md:space-x-16'>
         <div className='flex flex-col mt-24 justify-between'>
           <h1 className='text-white text-2xl sm:text-5xl font-signature font-bold md:mt-0'>
