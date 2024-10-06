@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="relative w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col justify-center items-center py-12"
+      className="relative w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col justify-center items-center pt-12 md:py-20"
     >
       <div className="max-w-screen-lg w-full mx-auto flex flex-col items-center justify-center px-6">
         <div className="text-center mb-6">
@@ -14,8 +14,8 @@ const About = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between w-full space-y-6 md:space-y-0 md:ml-0 md:mr-12">
-          <div className="md:text-lg w-full text-center text-gray-300 py-2 text-sm md:text-left">
+        <div className="flex flex-col items-center justify-between w-full space-y-6">
+          <div className="md:text-lg w-full text-center md:text-balance text-gray-300 py-2 text-sm">
             <p className="leading-relaxed">
               Hello! I'm a UI Developer with a passion for creating stunning and intuitive digital experiences. My expertise lies in both designing and developing websites that are not only visually appealing but also highly functional.
               <br /><br />
@@ -27,7 +27,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex w-full md:w-1/3 justify-center items-center mt-6 md:mt-0 md:ml-12">
+          <div className="flex w-full justify-center items-center mt-6">
             <TextSphere />
           </div>
         </div>

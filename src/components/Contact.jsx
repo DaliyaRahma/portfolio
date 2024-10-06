@@ -53,7 +53,7 @@ const Contact = () => {
         <AnimatePresence>
         {notification.visible && (
             <motion.div
-              className={`fixed top-5 self-center p-3 rounded-md text-white shadow-lg z-50 ${
+              className={`fixed top-5 self-center sm:text-center p-3 rounded-md text-white shadow-lg z-50 ${
                 notification.type === 'success' ? 'bg-gradient-to-r from-green-400 to-green-600' : 'bg-gradient-to-r from-red-400 to-red-600'
               } border border-gray-700`}
               variants={notificationVariant}
