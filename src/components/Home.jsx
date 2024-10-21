@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import myImage from '../assets/portfolio/myImage.png';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-
-
 import { Link } from 'react-scroll';
 
 const Home = ({ nav }) => {
@@ -25,13 +23,18 @@ const Home = ({ nav }) => {
   );
 
   const [wordIndex, setWordIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setWordIndex((prevIndex) => (prevIndex + 1) % thirdL.length);
-    }, 5000);
+      if (!isAnimating) {
+        setIsAnimating(true); // Prevent changing the index during the animation
+        setWordIndex((prevIndex) => (prevIndex + 1) % thirdL.length);
+      }
+    }, 3000); // Adjust interval time here if needed
+
     return () => clearInterval(interval);
-  }, [thirdL.length]);
+  }, [isAnimating, thirdL.length]);
 
   const slideIn = {
     enter: {
@@ -60,9 +63,12 @@ const Home = ({ nav }) => {
     },
   };
 
+  const handleAnimationComplete = () => {
+    setIsAnimating(false); // Allow the index to change again after animation completes
+  };
+
   return (
     <div name="home" className='relative h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
-     
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6 md:flex-row md:space-x-16'>
         <div className='flex flex-col mt-24 justify-between'>
           <h1 className='text-white text-2xl sm:text-5xl font-signature font-bold md:mt-0'>
@@ -80,26 +86,25 @@ const Home = ({ nav }) => {
                   animate={["center", "changeColor"]}
                   exit="exit"
                   variants={slideIn}
-                  className='absolute text-center'>
+                  className='absolute text-center'
+                  onAnimationComplete={handleAnimationComplete} // Callback to handle animation completion
+                >
                   {thirdL[wordIndex]}
                 </motion.span>
               </AnimatePresence>
             </div>
           )}
           <p className='relative text-gray-500 py-2 max-w-md my-0 text-sm md:text-lg'>I am a passionate front-end developer and designer who loves working on web applications using React.js and Tailwind CSS.</p>
-          < Link to='portfolio' smooth duration={500} offset={-50} className='group text-white w-fit px-6 py-3 mt-3 mb-10 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-cyan-800 hover:border-solid hover:border-cyan-500 hover:bg-none border-2 cursor-pointer ' >
+          <Link to='portfolio' smooth duration={500} offset={-50} className='group text-white w-fit px-6 py-3 mt-3 mb-10 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-cyan-800 hover:border-solid hover:border-cyan-500 hover:bg-none border-2 cursor-pointer '>
             Portfolio
             <span className='group-hover:rotate-90 duration-300'>
               <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
             </span>
-            </Link>
-         
-          </div>
-          <img src={myImage} alt="my pic" className='relative rounded-2xl w-2/3 md:w-1/3'></img>
+          </Link>
         </div>
-       
+        <img src={myImage} alt="my pic" className='relative rounded-2xl w-2/3 md:w-1/3'></img>
       </div>
-   
+    </div>
   );
 }
 

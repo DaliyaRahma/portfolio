@@ -72,12 +72,12 @@ const Skills = () => {
 
     return (
         <div name='skills' className='min-h-screen py-12 w-full bg-gradient-to-b from-gray-800 to-black'>
-            <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center text-center text-white h-full w-full'>
+            <div className='max-w-screen-lg mx-auto p-0 flex flex-col justify-center text-center text-white h-full w-full'>
                 <div>
                     <p className='text-2xl md:text-4xl  font-bold border-b-4 border-gray-500 p-2 inline'>Tools & Technologies</p>
                     <p className='md:text-lg py-4 text-sm '>These are the technologies I work with</p>
                 </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 px-12 py-4 sm:px-0 text-center gap-8'>
+                <div className='grid grid-cols-2 sm:grid-cols-3 md:px-12 px-10 py-4 sm:px-0 text-center md:gap-8 gap-6'>
                     {skills.map(({ id, src, title, style }) => (
                         <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
                             <img src={src} alt={title} className='w-20 mx-auto' />

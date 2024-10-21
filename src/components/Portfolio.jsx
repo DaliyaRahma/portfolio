@@ -19,7 +19,7 @@ const Portfolio = () => {
           <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="md:text-lg pt-4 text-sm">Checkout some of my work here</p>
+          <p className="md:text-lg py-2 text-sm">Checkout some of my work here</p>
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 sm:px-0 px-12">
           <div className="shadow-md shadow-gray-600 rounded-lg overflow-hidden bg-white bg-opacity-10 backdrop-blur-lg p-6">
